@@ -1,0 +1,501 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cognitive behavioral",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "NameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "You can call me as {name}",
+            "My name is {name}",
+            "{name}"
+          ]
+        },
+        {
+          "name": "SituationIntent",
+          "slots": [
+            {
+              "name": "condition",
+              "type": "cbtsituation"
+            }
+          ],
+          "samples": [
+            "I am {condition}",
+            "{condition}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "readyIntent",
+          "slots": [],
+          "samples": [
+            "I am ready to share my thought",
+            "i am here",
+            "ready"
+          ]
+        },
+        {
+          "name": "goingheadIntent",
+          "slots": [
+            {
+              "name": "head",
+              "type": "goingmyhead"
+            }
+          ],
+          "samples": [
+            "{head} is in my head.",
+            "{head} is going trough my head right now"
+          ]
+        },
+        {
+          "name": "yesIntent",
+          "slots": [],
+          "samples": [
+            "I am ready",
+            "ok"
+          ]
+        },
+        {
+          "name": "timeIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{number} weeks ago",
+            "{number} months ago",
+            "{number} days ago"
+          ]
+        },
+        {
+          "name": "badIntent",
+          "slots": [],
+          "samples": [
+            "very bad",
+            "It goes really bad",
+            "It goes very  bad",
+            "really bad",
+            "it goes very bad"
+          ]
+        },
+        {
+          "name": "PanicIntent",
+          "slots": [
+            {
+              "name": "pan",
+              "type": "panic"
+            }
+          ],
+          "samples": [
+            "{pan}"
+          ]
+        },
+        {
+          "name": "ImpactIntent",
+          "slots": [],
+          "samples": [
+            "I can\u0027t concentrate",
+            "can\u0027t concentrate",
+            "I can\u0027t eat",
+            "can\u0027t eat",
+            "can\u0027t sleep",
+            "I can\u0027t sleep"
+          ]
+        },
+        {
+          "name": "numberIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{number}"
+          ]
+        },
+        {
+          "name": "WorldIntent",
+          "slots": [
+            {
+              "name": "type",
+              "type": "WorldSlot"
+            }
+          ],
+          "samples": [
+            "{type}"
+          ]
+        },
+        {
+          "name": "familyIntent",
+          "slots": [
+            {
+              "name": "situation",
+              "type": "familyslot"
+            }
+          ],
+          "samples": [
+            "{situation}"
+          ]
+        },
+        {
+          "name": "UnemploymentIntent",
+          "slots": [
+            {
+              "name": "num",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{num} member",
+            "{num}"
+          ]
+        },
+        {
+          "name": "Workoutside",
+          "slots": [],
+          "samples": [
+            "nobody does",
+            "yes work"
+          ]
+        },
+        {
+          "name": "quarantineintent",
+          "slots": [],
+          "samples": [
+            "I am lonely",
+            "yes I am lonely"
+          ]
+        },
+        {
+          "name": "DeathIntent",
+          "slots": [
+            {
+              "name": "death",
+              "type": "deathslot"
+            }
+          ],
+          "samples": [
+            "I am upset about the {death} death",
+            "I am afraid of my {death} death",
+            "{death} death"
+          ]
+        },
+        {
+          "name": "ExerciseIntent",
+          "slots": [],
+          "samples": [
+            "yes I am ready",
+            "I am ready for the exercises"
+          ]
+        },
+        {
+          "name": "ThanksIntent",
+          "slots": [],
+          "samples": [
+            "thank you very much",
+            "thank",
+            "thank you",
+            "thaks"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "good",
+                "synonyms": [
+                  "great"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bad",
+                "synonyms": [
+                  "okey",
+                  "not great",
+                  "not so good"
+                ]
+              }
+            }
+          ],
+          "name": "cbtsituation"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Quarantine",
+                "synonyms": [
+                  "quarantine"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family",
+                "synonyms": [
+                  "Family",
+                  "my family"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Death",
+                "synonyms": [
+                  "death"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "World",
+                "synonyms": [
+                  "world"
+                ]
+              }
+            }
+          ],
+          "name": "goingmyhead"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "No, I don\u0027t"
+              }
+            },
+            {
+              "name": {
+                "value": "Yes, I have"
+              }
+            }
+          ],
+          "name": "panic"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "unemployment"
+              }
+            },
+            {
+              "name": {
+                "value": "peoples sudden death"
+              }
+            }
+          ],
+          "name": "WorldSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "health safety"
+              }
+            },
+            {
+              "name": {
+                "value": "economical situation",
+                "synonyms": [
+                  "Economical Situation",
+                  "Economical situation"
+                ]
+              }
+            }
+          ],
+          "name": "familyslot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "friend"
+              }
+            },
+            {
+              "name": {
+                "value": "relative"
+              }
+            },
+            {
+              "name": {
+                "value": "own"
+              }
+            }
+          ],
+          "name": "deathslot"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "NameIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1467516741917.348016611386"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "SituationIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "condition",
+              "type": "cbtsituation",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "readyIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.682060480305"
+          },
+          "slots": [],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "goingheadIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "head",
+              "type": "goingmyhead",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "timeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1467516741917.348016611386",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "for example my name is alexa"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.702349698422",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "your name is {name}"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.519796019758",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "So you are {condition}"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.682060480305",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "so yo are ready?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1174727750272",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{head}"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.609707479026",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "so {number} ago?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "42"
+}
